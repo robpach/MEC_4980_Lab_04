@@ -18,7 +18,7 @@ int offButton = 6;
 unsigned long debounceDelay = 100;
 unsigned long doublePressTime = 500;
 unsigned long prevTime = 0;
-int longTime = 1000;
+int longTime = 3000;
 int longStart = 0;
 
 float theta = 0.0;
