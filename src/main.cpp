@@ -130,6 +130,15 @@ void setup()
     delay(1000);
   }
   Serial.println("Everything started!!!!!");
+  
+  myOLED.text(0,0,"clearingthescreen");
+  myOLED.text(0,10,"clearingthescreen");
+  myOLED.text(0,20,"clearingthescreen");
+  myOLED.text(0,30,"clearingthescreen");
+  myOLED.text(0,40,"clearingthescreen");
+  // For some reason the screen doesn't clear until you 'overwrite' the random pixels there
+  myOLED.display();
+  delay(500);
   myOLED.erase();
   myOLED.display();
 }
@@ -185,7 +194,6 @@ void loop()
   switch (currentState)
   {
   case OffState:
-    delay(500);
     myOLED.erase();
     myOLED.display();
     break;
